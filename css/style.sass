@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700')
+@import 'radio.sass'
+$primary: 'Roboto', sans-serif
+$white: #FFFFFF
+$grey: #F7F7F7
+$dark-purple: #47589A
+$light-purple: #6778BA
+*:focus 
+	outline: none
+body
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-family: $primary
+	max-width: 100%
+	margin: 0
+	padding: 0
+	font-weight: 700
+	color: $light-purple
+	font-size: 20px
+.content
+	padding-bottom: 10px
+	position: relative
+	background: $grey
+	width: 40%
+	margin: 3% 30%
+	border-radius: 5px
+	display: flex
+	flex-direction: column
+	flex-wrap: wrap
+	justify-content: center
+	border: 3px solid $light-purple
+	align-items: center
+	.lang
+		position: absolute
+		right: 10
+		top: 10
+		font-weight: 400
+		font-size: 0.8em
+	.logo
+		width: 200px
+		height: 200px
+	.key-indicator
+		font-weight: 400
+		font-size: 0.9em
+		margin-bottom: -4px
+	.input
+		background: transparent
+		color: $dark-purple
+		border: 0
+		border-bottom: 4px solid $light-purple
+		border-radius: 2px
+		padding: 10px
+		width: 25em
+	.after
+		font-size: 1.2em
+		display: inline-block
+		color: $light-purple
+		margin-right: -30px
+		-webkit-transform: scaleY(-1) rotate(314deg) translateY(-4px) translateX(4px)
+		transform: scaleY(-1) rotate(314deg) translateY(-4px) translateX(4px)
+
+	.input-text
+		padding-left: 32px
+		text-overflow: ellipsis
+	
+	.button
+		margin-top: 10px
+		background: $light-purple
+		border: 2px solid $dark-purple
+		color: $white
+		padding: 10px 15px
+		border-radius: 6px
+		font-size: 0.8em
+		font-family: $primary
+	.confirm-label
+		font-weight: 400
+		font-size: 0.8em

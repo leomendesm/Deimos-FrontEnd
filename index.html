@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>
+			Deimos Asset Issuer
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/style.min.css">
+		<script src="https://use.fontawesome.com/afbd702029.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="lang">PT-BR | US</div>
+			<img src="img/deimos-logo.png" alt="" class="logo">
+			<p>Issuer Account</p>
+			<select class="input">
+				<option value="do-nothing">I won't need an issuer account now</option>
+				<option value="generate-key-pair" selected>I want to create a new issuing account</option>
+				<option value="public-key">I know the issuer account public key</option>
+				<option value="secret-key">I own the issuer account secret key</option>
+			</select>
+			<p class="key-indicator">Secret Key</p>
+			<div class="form-group">
+				<i class="fa fa-key after" aria-hidden="true"></i>
+				<input type="text" class="input input-text" disabled value="GBUKNN6YFC2VUY6TIHNKD2OLQWJJU5FXYWPLPMS2VGOTR65LU2M6VMZ4">
+			</div>
+			<p class="key-indicator">Public Key</p>			
+			<div class="form-group">
+				<i class="fa fa-key after" aria-hidden="true"></i>
+				<input type="text" class="input input-text" disabled value="GBUKNN6YFC2VUY6TIHNKD2OLQWJJU5FXYWPLPMS2VGOTR65LU2M6VMZ4">
+			</div>
+			<br>
+			<br>			
+			<p>Distributor Account</p>			
+			<select class="input">
+				<option value="do-nothing">I won't need a distributor account now</option>
+				<option value="generate-key-pair" selected>I want to create a new distribution account</option>
+				<option value="public-key">I know the distributor account public key</option>
+				<option value="secret-key">I own the distributor account secret key</option>
+			</select>
+			<p class="key-indicator">Secret Key</p>
+			<div class="form-group">
+				<i class="fa fa-key after" aria-hidden="true"></i>
+				<input type="text" class="input input-text" disabled value="GBUKNN6YFC2VUY6TIHNKD2OLQWJJU5FXYWPLPMS2VGOTR65LU2M6VMZ4">
+			</div>
+			<p class="key-indicator">Public Key</p>			
+			<div class="form-group">
+				<i class="fa fa-key after" aria-hidden="true"></i>
+				<input type="text" class="input input-text" disabled value="GBUKNN6YFC2VUY6TIHNKD2OLQWJJU5FXYWPLPMS2VGOTR65LU2M6VMZ4">
+			</div>
+			<br>
+			<br>
+			<p>Network</p>
+			<div class="middle">
+				<label>
+					<input type="radio" name="radio" checked/>
+					<div class="front-end box">
+						<span>Stellar</span>
+					</div>
+				</label>
+				<label>
+					<input type="radio" name="radio"/>
+					<div class="back-end box">
+						<span>Test</span>
+					</div>
+				</label>
+			</div>
+			<br>
+			<div class="form-group">
+				<input type="checkbox" id="confirm"><label for="confirm" class="confirm-label">I state the keys were kept in a safe place &<br> I understand that once lost the account cannot be recovered.</label>
+			</div>
+			<br>
+			<input type="submit" value="CONTINUE" class="button">
+		</div>
+	</body>
+</html>
